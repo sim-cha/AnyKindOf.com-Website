@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnyKindOf Creative Agency</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?creative,agency') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .main-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    /* Services Section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .service-item {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service-item h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+    .service-item p {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+    /* Contact Form */
+    .contact-form {
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .contact-form h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+      text-align: center;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .contact-form button:hover {
+      background: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AnyKindOf Creative</h1>
+    <p>We bring your ideas to life</p>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to AnyKindOf</h2>
+      <p>Your creative agency for branding, design, and digital innovation.</p>
+    </div>
+  </section>
+  
+  <div class="main-container">
+    <section class="services">
+      <div class="service-item">
+        <h3>Branding</h3>
+        <p>Crafting unique identities that resonate with your audience.</p>
+      </div>
+      <div class="service-item">
+        <h3>Design</h3>
+        <p>Innovative designs for logos, websites, and marketing materials.</p>
+      </div>
+      <div class="service-item">
+        <h3>Digital Strategy</h3>
+        <p>Strategic solutions to drive engagement and growth.</p>
+      </div>
+    </section>
+    
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-form-endpoint" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 AnyKindOf Creative Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
